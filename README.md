@@ -1,0 +1,2 @@
+# MyRabbitMQ
+ My RabbitMQ
