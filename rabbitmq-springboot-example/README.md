@@ -36,8 +36,6 @@ RabbitListener
 
 ## Screenshot
 
-![00.png](images/00.png)
-
 ![01.png](images/01.png)
 
 ![02.png](images/02.png)
