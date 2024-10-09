@@ -25,8 +25,8 @@ public class OrderPublisher {
 	@PostMapping("/{restaurantName}")
 	public String bookOrder(@RequestBody Order order, @PathVariable String restaurantName) {
 		order.setOrderId(UUID.randomUUID().toString());
-		//restaurant_service
-		//payment_service
+		// restaurant_service
+		// payment_service
 		OrderStatus orderStatus = new OrderStatus(order, "PROCESS", "order placed successfully in " + restaurantName);
 		rabbitTemplate.convertAndSend(MessagingConfig.EXCHANGE, MessagingConfig.ROUTING_KEY, orderStatus);
 
